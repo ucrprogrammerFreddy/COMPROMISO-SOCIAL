@@ -44,5 +44,15 @@ namespace EduAcceso.Vista
         {
 
         }
+
+        private void btnAdministradores_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

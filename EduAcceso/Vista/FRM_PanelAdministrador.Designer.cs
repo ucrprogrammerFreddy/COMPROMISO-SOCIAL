@@ -45,11 +45,13 @@
             this.btnhome = new System.Windows.Forms.Button();
             this.paneldesubmenu = new System.Windows.Forms.Panel();
             this.pictureClose = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.paneldesubmenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureClose)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -70,6 +72,7 @@
             // 
             // btnSalir
             // 
+<<<<<<< Updated upstream
             this.btnSalir.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSalir.FlatAppearance.BorderSize = 0;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -84,6 +87,31 @@
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.button11_Click);
+=======
+            this.paneldesubmenu.Controls.Add(this.pictureBox1);
+            this.paneldesubmenu.Controls.Add(this.pictureClose);
+            this.paneldesubmenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.paneldesubmenu.Location = new System.Drawing.Point(0, 0);
+            this.paneldesubmenu.Name = "paneldesubmenu";
+            this.paneldesubmenu.Size = new System.Drawing.Size(156, 83);
+            this.paneldesubmenu.TabIndex = 0;
+            // 
+            // btnhome
+            // 
+            this.btnhome.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnhome.FlatAppearance.BorderSize = 0;
+            this.btnhome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnhome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnhome.ForeColor = System.Drawing.Color.LightGray;
+            this.btnhome.Location = new System.Drawing.Point(0, 83);
+            this.btnhome.Name = "btnhome";
+            this.btnhome.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnhome.Size = new System.Drawing.Size(156, 45);
+            this.btnhome.TabIndex = 1;
+            this.btnhome.Text = "Home";
+            this.btnhome.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnhome.UseVisualStyleBackColor = true;
+>>>>>>> Stashed changes
             // 
             // panel3
             // 
@@ -101,6 +129,7 @@
             // 
             // button10
             // 
+<<<<<<< Updated upstream
             this.button10.Dock = System.Windows.Forms.DockStyle.Top;
             this.button10.FlatAppearance.BorderSize = 0;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -114,6 +143,72 @@
             this.button10.Text = "Visitante";
             this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button10.UseVisualStyleBackColor = true;
+=======
+            this.btnUsuarios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnUsuarios.FlatAppearance.BorderSize = 0;
+            this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsuarios.ForeColor = System.Drawing.Color.LightGray;
+            this.btnUsuarios.Location = new System.Drawing.Point(0, 0);
+            this.btnUsuarios.Name = "btnUsuarios";
+            this.btnUsuarios.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnUsuarios.Size = new System.Drawing.Size(156, 40);
+            this.btnUsuarios.TabIndex = 1;
+            this.btnUsuarios.Text = "Usurios";
+            this.btnUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUsuarios.UseVisualStyleBackColor = true;
+            this.btnUsuarios.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnAdministradores
+            // 
+            this.btnAdministradores.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAdministradores.FlatAppearance.BorderSize = 0;
+            this.btnAdministradores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdministradores.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdministradores.ForeColor = System.Drawing.Color.LightGray;
+            this.btnAdministradores.Location = new System.Drawing.Point(0, 40);
+            this.btnAdministradores.Name = "btnAdministradores";
+            this.btnAdministradores.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnAdministradores.Size = new System.Drawing.Size(156, 40);
+            this.btnAdministradores.TabIndex = 2;
+            this.btnAdministradores.Text = "Administradores";
+            this.btnAdministradores.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAdministradores.UseVisualStyleBackColor = true;
+            this.btnAdministradores.Click += new System.EventHandler(this.btnAdministradores_Click);
+            // 
+            // btnSupervisores
+            // 
+            this.btnSupervisores.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSupervisores.FlatAppearance.BorderSize = 0;
+            this.btnSupervisores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSupervisores.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSupervisores.ForeColor = System.Drawing.Color.LightGray;
+            this.btnSupervisores.Location = new System.Drawing.Point(0, 80);
+            this.btnSupervisores.Name = "btnSupervisores";
+            this.btnSupervisores.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnSupervisores.Size = new System.Drawing.Size(156, 37);
+            this.btnSupervisores.TabIndex = 3;
+            this.btnSupervisores.Text = "Supervisores";
+            this.btnSupervisores.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSupervisores.UseVisualStyleBackColor = true;
+            // 
+            // btnVisitante
+            // 
+            this.btnVisitante.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnVisitante.FlatAppearance.BorderSize = 0;
+            this.btnVisitante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVisitante.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVisitante.ForeColor = System.Drawing.Color.LightGray;
+            this.btnVisitante.Location = new System.Drawing.Point(0, 117);
+            this.btnVisitante.Name = "btnVisitante";
+            this.btnVisitante.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnVisitante.Size = new System.Drawing.Size(156, 39);
+            this.btnVisitante.TabIndex = 4;
+            this.btnVisitante.Text = "Visitante";
+            this.btnVisitante.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnVisitante.UseVisualStyleBackColor = true;
+>>>>>>> Stashed changes
             // 
             // panel2
             // 
@@ -286,12 +381,23 @@
             // pictureClose
             // 
             this.pictureClose.Image = ((System.Drawing.Image)(resources.GetObject("pictureClose.Image")));
-            this.pictureClose.Location = new System.Drawing.Point(123, 36);
+            this.pictureClose.Location = new System.Drawing.Point(120, 0);
             this.pictureClose.Name = "pictureClose";
             this.pictureClose.Size = new System.Drawing.Size(33, 28);
             this.pictureClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureClose.TabIndex = 1;
             this.pictureClose.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(31, 34);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // FRM_PanelAdministrador
             // 
@@ -308,6 +414,7 @@
             this.panel2.ResumeLayout(false);
             this.paneldesubmenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureClose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -330,5 +437,6 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.PictureBox pictureClose;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
