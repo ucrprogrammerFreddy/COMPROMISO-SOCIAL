@@ -30,25 +30,25 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_PanelAdministrador));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.paneldesubmenu = new System.Windows.Forms.Panel();
-            this.btnhome = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btnUsuarios = new System.Windows.Forms.Button();
-            this.btnAdministradores = new System.Windows.Forms.Button();
-            this.btnSupervisores = new System.Windows.Forms.Button();
-            this.btnVisitante = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnVisitante = new System.Windows.Forms.Button();
+            this.btnSupervisores = new System.Windows.Forms.Button();
+            this.btnAdministradores = new System.Windows.Forms.Button();
+            this.btnUsuarios = new System.Windows.Forms.Button();
+            this.btnhome = new System.Windows.Forms.Button();
+            this.paneldesubmenu = new System.Windows.Forms.Panel();
             this.pictureClose = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            this.paneldesubmenu.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.paneldesubmenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureClose)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,30 +68,22 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // paneldesubmenu
+            // btnSalir
             // 
-            this.paneldesubmenu.Controls.Add(this.pictureClose);
-            this.paneldesubmenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.paneldesubmenu.Location = new System.Drawing.Point(0, 0);
-            this.paneldesubmenu.Name = "paneldesubmenu";
-            this.paneldesubmenu.Size = new System.Drawing.Size(156, 83);
-            this.paneldesubmenu.TabIndex = 0;
-            // 
-            // btnhome
-            // 
-            this.btnhome.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnhome.FlatAppearance.BorderSize = 0;
-            this.btnhome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnhome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnhome.ForeColor = System.Drawing.Color.LightGray;
-            this.btnhome.Location = new System.Drawing.Point(0, 83);
-            this.btnhome.Name = "btnhome";
-            this.btnhome.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnhome.Size = new System.Drawing.Size(156, 45);
-            this.btnhome.TabIndex = 1;
-            this.btnhome.Text = "Home";
-            this.btnhome.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnhome.UseVisualStyleBackColor = true;
+            this.btnSalir.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSalir.FlatAppearance.BorderSize = 0;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.ForeColor = System.Drawing.Color.LightGray;
+            this.btnSalir.Location = new System.Drawing.Point(0, 290);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnSalir.Size = new System.Drawing.Size(156, 45);
+            this.btnSalir.TabIndex = 3;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.button11_Click);
             // 
             // panel3
             // 
@@ -107,71 +99,21 @@
             this.panel3.Size = new System.Drawing.Size(156, 162);
             this.panel3.TabIndex = 2;
             // 
-            // btnUsuarios
+            // button10
             // 
-            this.btnUsuarios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnUsuarios.FlatAppearance.BorderSize = 0;
-            this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUsuarios.ForeColor = System.Drawing.Color.LightGray;
-            this.btnUsuarios.Location = new System.Drawing.Point(0, 0);
-            this.btnUsuarios.Name = "btnUsuarios";
-            this.btnUsuarios.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnUsuarios.Size = new System.Drawing.Size(156, 40);
-            this.btnUsuarios.TabIndex = 1;
-            this.btnUsuarios.Text = "Usurios";
-            this.btnUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUsuarios.UseVisualStyleBackColor = true;
-            this.btnUsuarios.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // btnAdministradores
-            // 
-            this.btnAdministradores.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAdministradores.FlatAppearance.BorderSize = 0;
-            this.btnAdministradores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdministradores.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdministradores.ForeColor = System.Drawing.Color.LightGray;
-            this.btnAdministradores.Location = new System.Drawing.Point(0, 40);
-            this.btnAdministradores.Name = "btnAdministradores";
-            this.btnAdministradores.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnAdministradores.Size = new System.Drawing.Size(156, 40);
-            this.btnAdministradores.TabIndex = 2;
-            this.btnAdministradores.Text = "Administradores";
-            this.btnAdministradores.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAdministradores.UseVisualStyleBackColor = true;
-            // 
-            // btnSupervisores
-            // 
-            this.btnSupervisores.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSupervisores.FlatAppearance.BorderSize = 0;
-            this.btnSupervisores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSupervisores.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSupervisores.ForeColor = System.Drawing.Color.LightGray;
-            this.btnSupervisores.Location = new System.Drawing.Point(0, 80);
-            this.btnSupervisores.Name = "btnSupervisores";
-            this.btnSupervisores.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnSupervisores.Size = new System.Drawing.Size(156, 37);
-            this.btnSupervisores.TabIndex = 3;
-            this.btnSupervisores.Text = "Supervisores";
-            this.btnSupervisores.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSupervisores.UseVisualStyleBackColor = true;
-            // 
-            // btnVisitante
-            // 
-            this.btnVisitante.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnVisitante.FlatAppearance.BorderSize = 0;
-            this.btnVisitante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVisitante.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVisitante.ForeColor = System.Drawing.Color.LightGray;
-            this.btnVisitante.Location = new System.Drawing.Point(0, 117);
-            this.btnVisitante.Name = "btnVisitante";
-            this.btnVisitante.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnVisitante.Size = new System.Drawing.Size(156, 39);
-            this.btnVisitante.TabIndex = 4;
-            this.btnVisitante.Text = "Visitante";
-            this.btnVisitante.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnVisitante.UseVisualStyleBackColor = true;
+            this.button10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button10.FlatAppearance.BorderSize = 0;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.ForeColor = System.Drawing.Color.LightGray;
+            this.button10.Location = new System.Drawing.Point(0, 318);
+            this.button10.Name = "button10";
+            this.button10.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.button10.Size = new System.Drawing.Size(156, 39);
+            this.button10.TabIndex = 6;
+            this.button10.Text = "Visitante";
+            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button10.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
@@ -250,38 +192,96 @@
             this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button9.UseVisualStyleBackColor = true;
             // 
-            // button10
+            // btnVisitante
             // 
-            this.button10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.Color.LightGray;
-            this.button10.Location = new System.Drawing.Point(0, 318);
-            this.button10.Name = "button10";
-            this.button10.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.button10.Size = new System.Drawing.Size(156, 39);
-            this.button10.TabIndex = 6;
-            this.button10.Text = "Visitante";
-            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button10.UseVisualStyleBackColor = true;
+            this.btnVisitante.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnVisitante.FlatAppearance.BorderSize = 0;
+            this.btnVisitante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVisitante.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVisitante.ForeColor = System.Drawing.Color.LightGray;
+            this.btnVisitante.Location = new System.Drawing.Point(0, 117);
+            this.btnVisitante.Name = "btnVisitante";
+            this.btnVisitante.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnVisitante.Size = new System.Drawing.Size(156, 39);
+            this.btnVisitante.TabIndex = 4;
+            this.btnVisitante.Text = "Visitante";
+            this.btnVisitante.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnVisitante.UseVisualStyleBackColor = true;
             // 
-            // btnSalir
+            // btnSupervisores
             // 
-            this.btnSalir.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSalir.FlatAppearance.BorderSize = 0;
-            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.ForeColor = System.Drawing.Color.LightGray;
-            this.btnSalir.Location = new System.Drawing.Point(0, 290);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnSalir.Size = new System.Drawing.Size(156, 45);
-            this.btnSalir.TabIndex = 3;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.button11_Click);
+            this.btnSupervisores.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSupervisores.FlatAppearance.BorderSize = 0;
+            this.btnSupervisores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSupervisores.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSupervisores.ForeColor = System.Drawing.Color.LightGray;
+            this.btnSupervisores.Location = new System.Drawing.Point(0, 80);
+            this.btnSupervisores.Name = "btnSupervisores";
+            this.btnSupervisores.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnSupervisores.Size = new System.Drawing.Size(156, 37);
+            this.btnSupervisores.TabIndex = 3;
+            this.btnSupervisores.Text = "Supervisores";
+            this.btnSupervisores.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSupervisores.UseVisualStyleBackColor = true;
+            // 
+            // btnAdministradores
+            // 
+            this.btnAdministradores.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAdministradores.FlatAppearance.BorderSize = 0;
+            this.btnAdministradores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdministradores.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdministradores.ForeColor = System.Drawing.Color.LightGray;
+            this.btnAdministradores.Location = new System.Drawing.Point(0, 40);
+            this.btnAdministradores.Name = "btnAdministradores";
+            this.btnAdministradores.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnAdministradores.Size = new System.Drawing.Size(156, 40);
+            this.btnAdministradores.TabIndex = 2;
+            this.btnAdministradores.Text = "Administradores";
+            this.btnAdministradores.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAdministradores.UseVisualStyleBackColor = true;
+            // 
+            // btnUsuarios
+            // 
+            this.btnUsuarios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnUsuarios.FlatAppearance.BorderSize = 0;
+            this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsuarios.ForeColor = System.Drawing.Color.LightGray;
+            this.btnUsuarios.Location = new System.Drawing.Point(0, 0);
+            this.btnUsuarios.Name = "btnUsuarios";
+            this.btnUsuarios.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnUsuarios.Size = new System.Drawing.Size(156, 40);
+            this.btnUsuarios.TabIndex = 1;
+            this.btnUsuarios.Text = "Usuarios";
+            this.btnUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUsuarios.UseVisualStyleBackColor = true;
+            this.btnUsuarios.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnhome
+            // 
+            this.btnhome.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnhome.FlatAppearance.BorderSize = 0;
+            this.btnhome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnhome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnhome.ForeColor = System.Drawing.Color.LightGray;
+            this.btnhome.Location = new System.Drawing.Point(0, 83);
+            this.btnhome.Name = "btnhome";
+            this.btnhome.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnhome.Size = new System.Drawing.Size(156, 45);
+            this.btnhome.TabIndex = 1;
+            this.btnhome.Text = "Home";
+            this.btnhome.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnhome.UseVisualStyleBackColor = true;
+            // 
+            // paneldesubmenu
+            // 
+            this.paneldesubmenu.Controls.Add(this.pictureClose);
+            this.paneldesubmenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.paneldesubmenu.Location = new System.Drawing.Point(0, 0);
+            this.paneldesubmenu.Name = "paneldesubmenu";
+            this.paneldesubmenu.Size = new System.Drawing.Size(156, 83);
+            this.paneldesubmenu.TabIndex = 0;
             // 
             // pictureClose
             // 
@@ -304,9 +304,9 @@
             this.Text = "FRM_PanelAdministrador";
             this.Load += new System.EventHandler(this.FRM_PanelAdministrador_Load);
             this.panel1.ResumeLayout(false);
-            this.paneldesubmenu.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.paneldesubmenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureClose)).EndInit();
             this.ResumeLayout(false);
 
